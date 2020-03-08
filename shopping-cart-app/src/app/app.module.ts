@@ -10,7 +10,6 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { CartComponent } from './components/cart/cart.component';
-import { ToastComponent } from './components/toast/toast.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
@@ -24,7 +23,6 @@ import { CustomButtonComponent } from './components/custom-button/custom-button.
     ProductListComponent,
     ProductCardComponent,
     CartComponent,
-    ToastComponent,
     SearchBarComponent,
     ProductPageComponent,
     ErrorPageComponent,
