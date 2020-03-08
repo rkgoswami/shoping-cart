@@ -1,0 +1,109 @@
+.cart {
+    margin: 80px 200px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+
+        &-title {
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        &-button {
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 5px 10px;
+            text-align: center;
+            margin-right: 5px;
+            font-size: 12px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #4d4d4d;
+                color: white;
+            }
+        }
+    }
+
+    &__content {
+        height: 80px;
+        display: flex;
+        padding: 10px 20px 10px 10px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex: auto;
+    }
+
+    &__image {
+        height: 80px;
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    &__info {
+        text-align: left;
+
+        &-name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        &-price {
+            font-size: 12px;
+        }
+    }
+
+    &__button {
+        margin-right: 5px;
+    }
+
+    &__empty {
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        &-image {
+            height: 200px;
+            margin-left: -25px;
+            margin-bottom: 20px;
+        }
+
+        &-button {
+            width: fit-content;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 5px 10px;
+            text-align: center;
+            margin-right: 5px;
+            font-size: 12px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #4d4d4d;
+                color: white;
+            }
+        }
+    }
+}

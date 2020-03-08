@@ -1,0 +1,23 @@
+<div class="navigation-bar">
+  <div class="navigation-bar__title"
+      (click)="_goToHomePage()"
+  >
+    {{pageTitle}}
+  </div>
+  <div class="navigation-bar__options">
+    <div class="navigation-bar__options-item">Sign Up</div>
+    <div class="navigation-bar__options-item">Login</div>
+    <div class="navigation-bar__cart"
+        (click)="_onCartClick()"
+    >
+      <img class="navigation-bar__cart-icon" 
+          src="../../../assets/icons/cart.svg"
+      >
+      <div *ngIf="cartCount"
+           class="navigation-bar__cart-count"
+      >
+        {{cartCount}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="cart">
+  <div class="cart__header">
+    <div class="cart__header-title">Your Cart</div>
+    <div class="cart__header-button">
+      <div>Proceed to checkout</div>
+      <div>{{finalBill | currency: 'INR'}}</div>
+    </div>
+  </div>
+  <div *ngFor="let product of cartItems"
+       class="cart__content"  
+  >
+    <div class="cart__wrapper">
+      <img class="cart__image" 
+        src="assets/images/{{product.filename}}">
+      <div class="cart__info">
+        <div class="cart__info-name">
+          {{product.title}}
+        </div>
+        <div class="cart__info-price">
+          {{product.price | currency: 'INR'}}
+        </div>
+      </div>
+    </div>
+    <div class="cart__button">
+      <app-custom-button [count]="product.count" 
+                        (countChange)="updateProductCount($event, product)"
+      ></app-custom-button>
+    </div>
+  </div>
+  <div class="cart__empty"
+      *ngIf="!cartItems.length"
+  >
+    <div class="cart__empty-title">Your cart is empty . . .</div>
+    <img class="cart__empty-image"
+         src="assets/icons/empty-cart.svg">
+    <div class="cart__empty-button"
+         (click)="_goToHomePage()"
+    >
+      Continue Shopping
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="search-bar">
+  <div class="search-bar__input">
+    <img class="search-bar__input-icon" 
+         src="assets/icons/search.svg">
+    <input class="search-bar__input-text"
+           placeholder="Search by product name or category . . ."
+           [(ngModel)]="searchText"
+    >
+  </div>
+  <div class="search-bar__sort"
+        (click)="_sortList()"
+  >
+    <img class="search-bar__sort-icon"
+        [@rotatedState]='sortingState' 
+          src="assets/icons/download.svg">
+    <span class="search-bar__sort-title">
+      {{sortingState === 'ASC' ? 'A - Z' : 'Z - A'}}
+    </span>
+    
+  </div>
+</div>

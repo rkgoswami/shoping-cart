@@ -1,0 +1,9 @@
+<div class="product-page">
+  <app-search-bar (textChange)="_filterList($event)"
+                  (sortingOrder)="_sortList($event)"
+  ></app-search-bar>
+  <app-product-list [products]="filteredProducts"></app-product-list>
+  <div class="product-page__quote">
+    “Your diet is a bank account. Good food choices are good investments.” – Bethenny Frankel
+  </div>
+</div>
